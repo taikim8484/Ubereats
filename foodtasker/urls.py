@@ -1,5 +1,4 @@
 from django.contrib import admin
-from django.urls import path
 from django.conf.urls import url
 from foodtaskerapp import views
 from django.contrib.auth import views as auth_views
@@ -12,5 +11,7 @@ urlpatterns = [
     url(r'^restaurant/sign-out',auth_views.logout,
         {'next_page' : '/restaurant/sign-in/'},
         name = 'restaurant-sign-out'),
+     url(r'^restaurant/sign-up',views.restaurant_sign_up,
+        name = 'restaurant-sign-up'),
     url(r'^restaurant/$',views.restaurant_home,name = "restaurant-home")
 ]
