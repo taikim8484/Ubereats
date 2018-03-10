@@ -71,8 +71,7 @@ WSGI_APPLICATION = 'foodtasker.wsgi.application'
 #     }
 # }
 DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL')
+    'default': dj_database_url.config(default="postgres://xwtxtslghdjhez:deb2362a5b1e609eaad481a9ccae4c435244d68f249c258428aae27f69a6b7f2@ec2-107-20-176-27.compute-1.amazonaws.com:5432/deh03de0f7op8i")
     )
 }
 
