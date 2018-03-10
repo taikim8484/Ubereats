@@ -12,9 +12,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'rlq%bh01d(s(k&xx+3@p^oag@0govdc)c#4$!*mt)=i6g-eyra'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [".herokuapp.com"]
+ALLOWED_HOSTS = ["foodtasker-1712.herokuapp.com","127.0.0.1"]
 
 
 # Application definition
